@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+/* Google Fonts
+font-family: 'Open Sans', sans-serif;
+*/
+body{
+    box-sizing: border-box;
+}
+h3::first-letter{
+    color: #00796B ;
+    font-size: 3em;
+}
+/*i need to ask
+we need to add hover before first.letter*/
+h3:hover::first-letter{
+    color: #4FC3F7;
+}
+
+ul li:first-child:first-letter{
+    color: #4FC3F7;
+    font-size: 2em;
+    text-decoration: overline;
+}
+ul li:nth-of-type(2)::first-letter{
+    color: #C51162;
+    font-size: 2em;
+    text-decoration: underline;
+}
+ul li:nth-of-type(3){
+   text-decoration: line-through;
+}
+ul li:nth-of-type(3)::first-letter{
+    color: #64DD17;
+    font-size: 2em;
+}
+section p:first-child{
+    color: #37474F;
+    text-indent: 50px;
+}
+section p:first-child::first-line{
+    font-size: 1.3em;
+    /* color: blue; */
+}
+
+section p:not(:first-child)::first-letter{
+    color: #D50000;
+    font-size: 1.5em;
+}
+section p:not(:first-child)::first-line{
+    color: green;
+}
+section p:hover:not(:first-child):first-line{
+    color: #303F9F;
+}
+section p:nth-child(even){ /* gerade =even numbers*/
+    font-weight: 600;
+}
